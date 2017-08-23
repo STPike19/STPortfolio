@@ -1,42 +1,123 @@
 h1 {
-	font-size: 2.7em;
+	font-size: 2em;
 	text-align: center;
 	color: #1a1b1c;
+	font-family: "Helvetica";
+	text-decoration: underline overline;
 }
 
 h2 {
-	font-size: 1.2em;
-	text-align: center;
+	font-size: 0.9em;
+	text-align: justify;
 	color: #000;
+	font-family: "Helvetica";
+}
+
+h3 {
+  font-size: 0.8em;
+  color: #000;
+  font-family: "Helvetica";
 }
 
 .icon-bar {
-    width: 100%; /* Full-width */
-    background-color: #555; /* Dark-grey background */
+    margin-left: 38%;
+    padding: 1px;
+    border: 5px solid #202f42;
+    width: 300px; /* Full-width */
+    position: fixed;
+    bottom: 0;
+    background-color: #404d63; /* Grey background */
     overflow: auto; /* Overflow due to float */
 }
 
 .icon-bar a {
+    border-radius: 50px;
     float: left; /* Float links side by side */
     text-align: center; /* Center-align text */
-    width: 33.333333%; /* Equal width (3 icons with 33% width each = 99%)
-    padding: 12px 0; /* Some top and bottom padding */
-    transition: all 1.0s ease; /* Add transition for hover effects */
-    color: white; /* White text color */
+    width: 100px; /* Equal width (3 icons with 33% width each = 99%) */
+    height: 45px;
+    padding: 25px 0;
+    transition: all 0.15s ease; /* Add transition for hover effects */
+    color: #ddd; /* White text color */
     font-size: 36px; /* Increased font size */
 }
 
 .icon-bar a:hover {
-    background-color: #75777f; /* Add a hover color */
+    border-radius: 0px;
+    background-color: #21324f; /* Add a hover color */
 }
 
 .active {
-    background-color: #1e1e1e; /* Add an active/current color */
+    background-color: #445470; /* Add an active/current color */
+}
+
+button {
+  border-radius: 15px;
+  background-color: #bfbfbf;
+  border: none;
+  color: #202f42;
+  text-align: center;
+  font-size: 75px;
+  padding: 100px;
+  width: 550px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.portfolio-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -65px;
+  transition: 0.5s;
+}
+
+.about-me-button span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -55px;
+  transition: 0.5s;
+}
+
+.portfolio-button:hover span {
+  padding-right: 50px;
+}
+
+.about-me-button:hover span {
+  padding-left: 40px;
+}
+
+.portfolio-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.about-me-button:hover span:after {
+  opacity: 1;
+  left:0;
 }
 
 table {
-  border-spacing: 20px;
-  font-size: 2.0em;
-  text-align: center;
+  font-size: 1.6em;
+  border-collapse: collapse;
 }
 
+tr, td {
+  background-color: #bfbfbf;
+  border: 1px solid #bfbfbf;
+  padding: 20px;
+}
+
+.refresh {
+  text-align:center;
+}
